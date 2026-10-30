@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/bg_main">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp" android:background="@color/bg_surface">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="请登录并发送一句话" android:textColor="#FFF" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:text="等待抓包..." android:textColor="#00E5FF" android:padding="12dp" android:textSize="12sp"/>
+    </RelativeLayout>
+    
+    <org.mozilla.geckoview.GeckoView android:id="@+id/geckoView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>
